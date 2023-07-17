@@ -17,7 +17,7 @@ function SideMenu() {
           />
         </Button>
         <Button title="Technology">
-          <h1>Click me</h1>
+          <h2>Click me</h2>
           <span>🐹🐹</span>
         </Button>
         <Button title="Self Improvement"></Button>
