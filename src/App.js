@@ -9,25 +9,24 @@ function App() {
       <Header />
       <div style={{display: "flex", justifyContent: "center"}}>
         {/* Post & SideMenu container */}
-        <div style={{display: "flex", }}>
+        <div style={{display: "flex", justifyContent: "center"}}>
           {/* Post container */}
           <div style = {{width: "70%"}}>
-            <Post />
-            <Post />
-            <Post />
+            <Post postName="PinguCoder" postBody="Platform a learning"/>
+            <Post postName="learn javaScript" postBody="with PinguCoder"/>
+            <Post postName="Learn reactJS" postBody="with PinguCoder"/>
             <Post />
             <Post />
           </div>
           {/* =Post container= */}
 
           {/* SideMenu container */}
-          <div style={{width: "30%"}}>
+          <div style={{width: "30%", marginTop: "25px"}}>
             <SideMenu /> 
           </div>
           {/* =Post & SideMenu container=  */}
         </div>
       </div>
-      
     </div>
   );
 }

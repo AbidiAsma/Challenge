@@ -1,12 +1,12 @@
 import './Post.css'
 import Button from './Button'
-function Post() {
+function Post({postName="No Title", postBody="No body"}) {
   return (
     <>
     <div className={'container'}>
-      <h1 className={'title'}>This is the post title</h1>
+      <h2 className={'title'}>{postName}</h2>
       <hr />
-      <p className={'parag'}>This is the post body</p>
+      <p className={'parag'}> {postBody} </p>
       <Button />
     </div>
     </>

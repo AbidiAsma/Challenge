@@ -1,9 +1,14 @@
-function Button() {
+
+import './StyleButton.css';
+function Button({title, children}) {
   return (
     <>
-       <button className="btn">Click Me</button>
+      <button className="btn">
+        {title}
+        {children}
+      </button>
     </>
-  )
+  );
 }
 
 export default Button
