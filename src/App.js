@@ -4,6 +4,26 @@ import SideMenu from './Components/SideMenu';
 import './App.css';
 
 function App() {
+  const posts = [
+    {
+      id: 1,
+      postName: "PinguCoder",
+      postBody: "Platform a learning",
+    },
+    {
+      id: 2,
+      postName: "Learn javaScript",
+      postBody: "with PinguCoder",
+    },
+    {
+      id: 3,
+      postName: "Learn reactJS",
+      postBody: "with PinguCoder",
+    }
+  ];
+  const postList = posts.map((post)=> {
+    return <Post key={post.id} postName={post.postName} postBody={post.postBody}/>
+  })
   return (
     <div className="App">
       <Header />
@@ -12,11 +32,7 @@ function App() {
         <div style={{display: "flex", justifyContent: "center"}}>
           {/* Post container */}
           <div style = {{width: "70%"}}>
-            <Post postName="PinguCoder" postBody="Platform a learning"/>
-            <Post postName="learn javaScript" postBody="with PinguCoder"/>
-            <Post postName="Learn reactJS" postBody="with PinguCoder"/>
-            <Post />
-            <Post />
+            {postList}
           </div>
           {/* =Post container= */}
 
